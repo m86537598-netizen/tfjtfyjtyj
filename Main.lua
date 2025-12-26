@@ -1,582 +1,1281 @@
---[[
-
-		Gui2Lua™
-		10zOfficial
-		Version 1.0.0
-
-]]
-
-
--- Instances
-
-local ScreenGui = Instance.new("ScreenGui")
-local MainUi = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local List = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local AD = Instance.new("ScrollingFrame")
-local d = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local UIListLayout = Instance.new("UIListLayout")
-local Info = Instance.new("ImageButton")
-local UICorner_4 = Instance.new("UICorner")
-local Templates = Instance.new("Folder")
-local s = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local d_2 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Info_2 = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
-local d_3 = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local Info_3 = Instance.new("ImageButton")
-local UICorner_9 = Instance.new("UICorner")
-local d_4 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local Info_4 = Instance.new("ImageButton")
-local UICorner_11 = Instance.new("UICorner")
-local AB = Instance.new("ScrollingFrame")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local Thing = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
-local Thing_2 = Instance.new("TextLabel")
-local UICorner_13 = Instance.new("UICorner")
-local Thing_3 = Instance.new("TextLabel")
-local UICorner_14 = Instance.new("UICorner")
-local Thing_4 = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
-local AS = Instance.new("ScrollingFrame")
-local UIListLayout_3 = Instance.new("UIListLayout")
-local d_5 = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local ARF = Instance.new("ScrollingFrame")
-local d_6 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local UIListLayout_4 = Instance.new("UIListLayout")
-local Info_5 = Instance.new("ImageButton")
-local UICorner_18 = Instance.new("UICorner")
-local d_7 = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-local Info_6 = Instance.new("ImageButton")
-local UICorner_20 = Instance.new("UICorner")
-local Plans = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
-local UIListLayout_5 = Instance.new("UIListLayout")
-local a = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
-local e = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
-local DescInfo = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
-local n = Instance.new("TextLabel")
-local UICorner_25 = Instance.new("UICorner")
-local d_8 = Instance.new("TextLabel")
-local UICorner_26 = Instance.new("UICorner")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner_27 = Instance.new("UICorner")
-local ImageButton = Instance.new("ImageButton")
-local UICorner_28 = Instance.new("UICorner")
-local ImageButton_2 = Instance.new("ImageButton")
-local UICorner_29 = Instance.new("UICorner")
-local Thing_5 = Instance.new("TextLabel")
-local UICorner_30 = Instance.new("UICorner")
-local ImageLabel_2 = Instance.new("ImageLabel")
-
--- Properties
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
-
-MainUi.Name = "MainUi"
-MainUi.Parent = ScreenGui
-MainUi.BackgroundColor3 = Color3.new(0.435294, 0.435294, 0.435294)
-MainUi.BorderColor3 = Color3.new(0, 0, 0)
-MainUi.BorderSizePixel = 0
-MainUi.Position = UDim2.new(0.297716141, 0, 0.410353541, 0)
-MainUi.Size = UDim2.new(0, 521, 0, 265)
-
-UICorner.Parent = MainUi
-
-List.Name = "List"
-List.Parent = MainUi
-List.BackgroundColor3 = Color3.new(0.403922, 0.403922, 0.403922)
-List.BorderColor3 = Color3.new(0, 0, 0)
-List.BorderSizePixel = 0
-List.Position = UDim2.new(0.0149827832, 0, 0.211320758, 0)
-List.Size = UDim2.new(0, 503, 0, 155)
-
-UICorner_2.Parent = List
-
-AD.Name = "AD"
-AD.Parent = List
-AD.Active = true
-AD.BackgroundColor3 = Color3.new(1, 1, 1)
-AD.BackgroundTransparency = 1
-AD.BorderColor3 = Color3.new(0, 0, 0)
-AD.BorderSizePixel = 0
-AD.Size = UDim2.new(0, 503, 0, 155)
-AD.CanvasSize = UDim2.new(0, 0, 20, 0)
-
-d.Name = "d"
-d.Parent = AD
-d.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d.BorderColor3 = Color3.new(0, 0, 0)
-d.BorderSizePixel = 0
-d.Size = UDim2.new(0, 389, 0, 43)
-d.Font = Enum.Font.SourceSans
-d.Text = "Max Speed"
-d.TextColor3 = Color3.new(1, 1, 1)
-d.TextScaled = true
-d.TextSize = 14
-d.TextWrapped = true
-
-UICorner_3.Parent = d
-
-UIListLayout.Parent = AD
-UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
-Info.Name = "Info"
-Info.Parent = AD
-Info.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info.BorderColor3 = Color3.new(0, 0, 0)
-Info.BorderSizePixel = 0
-Info.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info.Size = UDim2.new(0, 44, 0, 43)
-Info.Image = "rbxassetid://5832745500"
-
-UICorner_4.Parent = Info
-
-Templates.Name = "Templates"
-Templates.Parent = AD
-
-s.Name = "s"
-s.Parent = Templates
-s.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-s.BorderColor3 = Color3.new(0, 0, 0)
-s.BorderSizePixel = 0
-s.Position = UDim2.new(0.570576549, 0, 0, 0)
-s.Size = UDim2.new(0, 50, 0, 43)
-s.Visible = false
-s.Font = Enum.Font.SourceSans
-s.Text = "Info"
-s.TextColor3 = Color3.new(1, 1, 1)
-s.TextScaled = true
-s.TextSize = 14
-s.TextWrapped = true
-
-UICorner_5.Parent = s
-
-d_2.Name = "d"
-d_2.Parent = AD
-d_2.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d_2.BorderColor3 = Color3.new(0, 0, 0)
-d_2.BorderSizePixel = 0
-d_2.Position = UDim2.new(0, 0, 0.0138709676, 0)
-d_2.Size = UDim2.new(0, 389, 0, 43)
-d_2.Font = Enum.Font.SourceSans
-d_2.Text = "FullBright"
-d_2.TextColor3 = Color3.new(1, 1, 1)
-d_2.TextScaled = true
-d_2.TextSize = 14
-d_2.TextWrapped = true
-
-UICorner_6.Parent = d_2
-
-Info_2.Name = "Info"
-Info_2.Parent = AD
-Info_2.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info_2.BorderColor3 = Color3.new(0, 0, 0)
-Info_2.BorderSizePixel = 0
-Info_2.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info_2.Size = UDim2.new(0, 44, 0, 43)
-Info_2.Image = "rbxassetid://5832745500"
-
-UICorner_7.Parent = Info_2
-
-d_3.Name = "d"
-d_3.Parent = AD
-d_3.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d_3.BorderColor3 = Color3.new(0, 0, 0)
-d_3.BorderSizePixel = 0
-d_3.Position = UDim2.new(0, 0, 0.0138709676, 0)
-d_3.Size = UDim2.new(0, 389, 0, 43)
-d_3.Font = Enum.Font.SourceSans
-d_3.Text = "Show  Players and Homer"
-d_3.TextColor3 = Color3.new(1, 1, 1)
-d_3.TextScaled = true
-d_3.TextSize = 14
-d_3.TextWrapped = true
-
-UICorner_8.Parent = d_3
-
-Info_3.Name = "Info"
-Info_3.Parent = AD
-Info_3.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info_3.BorderColor3 = Color3.new(0, 0, 0)
-Info_3.BorderSizePixel = 0
-Info_3.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info_3.Size = UDim2.new(0, 44, 0, 43)
-Info_3.Image = "rbxassetid://5832745500"
-
-UICorner_9.Parent = Info_3
-
-d_4.Name = "d"
-d_4.Parent = AD
-d_4.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d_4.BorderColor3 = Color3.new(0, 0, 0)
-d_4.BorderSizePixel = 0
-d_4.Position = UDim2.new(0, 0, 0.0138709676, 0)
-d_4.Size = UDim2.new(0, 389, 0, 43)
-d_4.Font = Enum.Font.SourceSans
-d_4.Text = "AFK Grind"
-d_4.TextColor3 = Color3.new(1, 1, 1)
-d_4.TextScaled = true
-d_4.TextSize = 14
-d_4.TextWrapped = true
-
-UICorner_10.Parent = d_4
-
-Info_4.Name = "Info"
-Info_4.Parent = AD
-Info_4.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info_4.BorderColor3 = Color3.new(0, 0, 0)
-Info_4.BorderSizePixel = 0
-Info_4.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info_4.Size = UDim2.new(0, 44, 0, 43)
-Info_4.Image = "rbxassetid://5832745500"
-
-UICorner_11.Parent = Info_4
-
-AB.Name = "AB"
-AB.Parent = List
-AB.Active = true
-AB.BackgroundColor3 = Color3.new(1, 1, 1)
-AB.BackgroundTransparency = 1
-AB.BorderColor3 = Color3.new(0, 0, 0)
-AB.BorderSizePixel = 0
-AB.Size = UDim2.new(0, 503, 0, 155)
-AB.Visible = false
-AB.CanvasSize = UDim2.new(0, 0, 20, 0)
-
-UIListLayout_2.Parent = AB
-UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-
-Thing.Name = "Thing"
-Thing.Parent = AB
-Thing.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-Thing.BorderColor3 = Color3.new(0, 0, 0)
-Thing.BorderSizePixel = 0
-Thing.Size = UDim2.new(0, 489, 0, 83)
-Thing.Font = Enum.Font.SourceSans
-Thing.Text = "Trees Troll GUI"
-Thing.TextColor3 = Color3.new(1, 1, 1)
-Thing.TextScaled = true
-Thing.TextSize = 14
-Thing.TextWrapped = true
-
-UICorner_12.Parent = Thing
-
-Thing_2.Name = "Thing"
-Thing_2.Parent = AB
-Thing_2.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-Thing_2.BorderColor3 = Color3.new(0, 0, 0)
-Thing_2.BorderSizePixel = 0
-Thing_2.Position = UDim2.new(0, 0, 0.0267741941, 0)
-Thing_2.Size = UDim2.new(0, 489, 0, 72)
-Thing_2.Font = Enum.Font.SourceSans
-Thing_2.Text = "Advanced organized GUI setup"
-Thing_2.TextColor3 = Color3.new(1, 1, 1)
-Thing_2.TextScaled = true
-Thing_2.TextSize = 14
-Thing_2.TextWrapped = true
-
-UICorner_13.Parent = Thing_2
-
-Thing_3.Name = "Thing"
-Thing_3.Parent = AB
-Thing_3.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-Thing_3.BorderColor3 = Color3.new(0, 0, 0)
-Thing_3.BorderSizePixel = 0
-Thing_3.Position = UDim2.new(0, 0, -0.00193548389, 0)
-Thing_3.Size = UDim2.new(0, 489, 0, 41)
-Thing_3.Font = Enum.Font.SourceSans
-Thing_3.Text = "Creator(s): NyOchIASIOWUK (yes this is a alt account stupid)"
-Thing_3.TextColor3 = Color3.new(1, 1, 1)
-Thing_3.TextScaled = true
-Thing_3.TextSize = 14
-Thing_3.TextWrapped = true
-
-UICorner_14.Parent = Thing_3
-
-Thing_4.Name = "Thing"
-Thing_4.Parent = AB
-Thing_4.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-Thing_4.BorderColor3 = Color3.new(0, 0, 0)
-Thing_4.BorderSizePixel = 0
-Thing_4.Position = UDim2.new(0, 0, -0.00193548389, 0)
-Thing_4.Size = UDim2.new(0, 489, 0, 41)
-Thing_4.Font = Enum.Font.SourceSans
-Thing_4.Text = "Thanks to: Dex, Infinite Yield, Noxious hub, And you :)"
-Thing_4.TextColor3 = Color3.new(1, 1, 1)
-Thing_4.TextScaled = true
-Thing_4.TextSize = 14
-Thing_4.TextWrapped = true
-
-UICorner_15.Parent = Thing_4
-
-AS.Name = "AS"
-AS.Parent = List
-AS.Active = true
-AS.BackgroundColor3 = Color3.new(1, 1, 1)
-AS.BackgroundTransparency = 1
-AS.BorderColor3 = Color3.new(0, 0, 0)
-AS.BorderSizePixel = 0
-AS.Size = UDim2.new(0, 503, 0, 155)
-AS.Visible = false
-AS.CanvasSize = UDim2.new(0, 0, 20, 0)
-
-UIListLayout_3.Parent = AS
-UIListLayout_3.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-
-d_5.Name = "d"
-d_5.Parent = AS
-d_5.BackgroundColor3 = Color3.new(0.443137, 0.27451, 0.27451)
-d_5.BorderColor3 = Color3.new(0, 0, 0)
-d_5.BorderSizePixel = 0
-d_5.Position = UDim2.new(0.299204767, 0, 0, 0)
-d_5.Size = UDim2.new(0, 239, 0, 34)
-d_5.Font = Enum.Font.SourceSans
-d_5.Text = "Lock"
-d_5.TextColor3 = Color3.new(1, 1, 1)
-d_5.TextScaled = true
-d_5.TextSize = 14
-d_5.TextWrapped = true
-
-UICorner_16.Parent = d_5
-
-ARF.Name = "ARF"
-ARF.Parent = List
-ARF.Active = true
-ARF.BackgroundColor3 = Color3.new(1, 1, 1)
-ARF.BackgroundTransparency = 1
-ARF.BorderColor3 = Color3.new(0, 0, 0)
-ARF.BorderSizePixel = 0
-ARF.Size = UDim2.new(0, 503, 0, 155)
-ARF.Visible = false
-ARF.CanvasSize = UDim2.new(0, 0, 20, 0)
-
-d_6.Name = "d"
-d_6.Parent = ARF
-d_6.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d_6.BorderColor3 = Color3.new(0, 0, 0)
-d_6.BorderSizePixel = 0
-d_6.Size = UDim2.new(0, 399, 0, 43)
-d_6.Font = Enum.Font.SourceSans
-d_6.Text = "Unlock Night Vision, Camera anywhere,  player flashlight, and double stamina."
-d_6.TextColor3 = Color3.new(1, 1, 1)
-d_6.TextScaled = true
-d_6.TextSize = 14
-d_6.TextWrapped = true
-
-UICorner_17.Parent = d_6
-
-UIListLayout_4.Parent = ARF
-UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-
-Info_5.Name = "Info"
-Info_5.Parent = ARF
-Info_5.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info_5.BorderColor3 = Color3.new(0, 0, 0)
-Info_5.BorderSizePixel = 0
-Info_5.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info_5.Size = UDim2.new(0, 44, 0, 43)
-Info_5.Image = "rbxassetid://5832745500"
-
-UICorner_18.Parent = Info_5
-
-d_7.Name = "d"
-d_7.Parent = ARF
-d_7.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-d_7.BorderColor3 = Color3.new(0, 0, 0)
-d_7.BorderSizePixel = 0
-d_7.Position = UDim2.new(0, 0, 0.0138709676, 0)
-d_7.Size = UDim2.new(0, 216, 0, 43)
-d_7.Font = Enum.Font.SourceSans
-d_7.Text = "Tweak out"
-d_7.TextColor3 = Color3.new(1, 1, 1)
-d_7.TextScaled = true
-d_7.TextSize = 14
-d_7.TextWrapped = true
-
-UICorner_19.Parent = d_7
-
-Info_6.Name = "Info"
-Info_6.Parent = ARF
-Info_6.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-Info_6.BorderColor3 = Color3.new(0, 0, 0)
-Info_6.BorderSizePixel = 0
-Info_6.Position = UDim2.new(0.570576549, 0, 0, 0)
-Info_6.Size = UDim2.new(0, 44, 0, 43)
-Info_6.Image = "rbxassetid://5832745500"
-
-UICorner_20.Parent = Info_6
-
-Plans.Name = "Plans"
-Plans.Parent = MainUi
-Plans.BackgroundColor3 = Color3.new(0.403922, 0.403922, 0.403922)
-Plans.BorderColor3 = Color3.new(0, 0, 0)
-Plans.BorderSizePixel = 0
-Plans.Position = UDim2.new(0.0149827832, 0, 0.0226415098, 0)
-Plans.Size = UDim2.new(0, 503, 0, 43)
-
-UICorner_21.Parent = Plans
-
-UIListLayout_5.Parent = Plans
-UIListLayout_5.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
-
-a.Name = "a"
-a.Parent = Plans
-a.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-a.BorderColor3 = Color3.new(0, 0, 0)
-a.BorderSizePixel = 0
-a.Position = UDim2.new(0.14314115, 0, 0, 0)
-a.Size = UDim2.new(0, 95, 0, 43)
-a.Font = Enum.Font.SourceSans
-a.Text = "Player"
-a.TextColor3 = Color3.new(1, 1, 1)
-a.TextScaled = true
-a.TextSize = 14
-a.TextWrapped = true
-
-UICorner_22.Parent = a
-
-e.Name = "e"
-e.Parent = Plans
-e.BackgroundColor3 = Color3.new(0.388235, 0.415686, 0.443137)
-e.BorderColor3 = Color3.new(0, 0, 0)
-e.BorderSizePixel = 0
-e.Position = UDim2.new(0.0149827832, 0, 0.0226415098, 0)
-e.Size = UDim2.new(0, 44, 0, 43)
-e.Font = Enum.Font.SourceSans
-e.Text = "X"
-e.TextColor3 = Color3.new(1, 1, 1)
-e.TextScaled = true
-e.TextSize = 14
-e.TextWrapped = true
-
-UICorner_23.Parent = e
-
-DescInfo.Name = "DescInfo"
-DescInfo.Parent = MainUi
-DescInfo.BackgroundColor3 = Color3.new(0.435294, 0.435294, 0.435294)
-DescInfo.BorderColor3 = Color3.new(0, 0, 0)
-DescInfo.BorderSizePixel = 0
-DescInfo.Position = UDim2.new(0.999018312, 0, -0.414065272, 0)
-DescInfo.Size = UDim2.new(0, 301, 0, 374)
-DescInfo.Visible = false
-
-UICorner_24.Parent = DescInfo
-
-n.Name = "n"
-n.Parent = DescInfo
-n.BackgroundColor3 = Color3.new(0.435294, 0.435294, 0.435294)
-n.BorderColor3 = Color3.new(0, 0, 0)
-n.BorderSizePixel = 0
-n.Position = UDim2.new(0.0382384248, 0, 0.0409080796, 0)
-n.Size = UDim2.new(0, 277, 0, 46)
-n.Font = Enum.Font.SourceSans
-n.Text = "Hi"
-n.TextColor3 = Color3.new(1, 1, 1)
-n.TextScaled = true
-n.TextSize = 14
-n.TextWrapped = true
-
-UICorner_25.Parent = n
-
-d_8.Name = "d"
-d_8.Parent = DescInfo
-d_8.BackgroundColor3 = Color3.new(0.435294, 0.435294, 0.435294)
-d_8.BorderColor3 = Color3.new(0, 0, 0)
-d_8.BorderSizePixel = 0
-d_8.Position = UDim2.new(0.0382384248, 0, 0.182619303, 0)
-d_8.Size = UDim2.new(0, 277, 0, 297)
-d_8.Font = Enum.Font.SourceSans
-d_8.Text = "Hi"
-d_8.TextColor3 = Color3.new(1, 1, 1)
-d_8.TextScaled = true
-d_8.TextSize = 14
-d_8.TextWrapped = true
-
-UICorner_26.Parent = d_8
-
-ImageLabel.Parent = MainUi
-ImageLabel.BackgroundColor3 = Color3.new(0.403922, 0.403922, 0.403922)
-ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.781190038, 0, 0.822641492, 0)
-ImageLabel.Size = UDim2.new(0, 39, 0, 37)
-ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-UICorner_27.Parent = ImageLabel
-
-ImageButton.Parent = MainUi
-ImageButton.BackgroundColor3 = Color3.new(0.403922, 0.403922, 0.403922)
-ImageButton.BorderColor3 = Color3.new(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.879078686, 0, 0.822641492, 0)
-ImageButton.Size = UDim2.new(0, 39, 0, 37)
-ImageButton.Image = "rbxassetid://7059346373"
-
-UICorner_28.Parent = ImageButton
-
-ImageButton_2.Parent = MainUi
-ImageButton_2.BackgroundColor3 = Color3.new(0.403922, 0.403922, 0.403922)
-ImageButton_2.BorderColor3 = Color3.new(0, 0, 0)
-ImageButton_2.BorderSizePixel = 0
-ImageButton_2.Position = UDim2.new(0.0284836777, 0, 0.822641492, 0)
-ImageButton_2.Size = UDim2.new(0, 39, 0, 37)
-ImageButton_2.Image = "rbxassetid://16485180075"
-
-UICorner_29.Parent = ImageButton_2
-
-Thing_5.Name = "Thing"
-Thing_5.Parent = MainUi
-Thing_5.BackgroundColor3 = Color3.new(0.568627, 0.568627, 0.568627)
-Thing_5.BorderColor3 = Color3.new(0, 0, 0)
-Thing_5.BorderSizePixel = 0
-Thing_5.Position = UDim2.new(0.135904089, 0, 0.830152273, 0)
-Thing_5.Size = UDim2.new(0, 322, 0, 35)
-Thing_5.Font = Enum.Font.SourceSans
-Thing_5.Text = "Hi"
-Thing_5.TextColor3 = Color3.new(1, 1, 1)
-Thing_5.TextScaled = true
-Thing_5.TextSize = 14
-Thing_5.TextWrapped = true
-
-UICorner_30.Parent = Thing_5
-
-ImageLabel_2.Parent = MainUi
-ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel_2.BackgroundTransparency = 1
-ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(-0.00767754298, 0, 0.535849035, 0)
-ImageLabel_2.Size = UDim2.new(0, 76, 0, 76)
-ImageLabel_2.Image = "rbxassetid://99099293268582"
-ImageLabel_2.ImageTransparency = 0.9399999976158142
-
--- Scripts
-
-local function VTUY_fake_script() -- MainUi.Drag 
-	local script = Instance.new('LocalScript', MainUi)
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
+-- Instances: 170 | Scripts: 38 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.ScreenGui.MainUi
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["2"]["Size"] = UDim2.new(0, 521, 0, 265);
+G2L["2"]["Position"] = UDim2.new(0.29772, 0, 0.41035, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[MainUi]];
+
+
+-- StarterGui.ScreenGui.MainUi.Drag
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Name"] = [[Drag]];
+
+
+-- StarterGui.ScreenGui.MainUi.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.UIGradient
+G2L["5"] = Instance.new("UIGradient", G2L["2"]);
+G2L["5"]["Rotation"] = 69;
+G2L["5"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List
+G2L["6"] = Instance.new("Frame", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104);
+G2L["6"]["Size"] = UDim2.new(0, 503, 0, 155);
+G2L["6"]["Position"] = UDim2.new(0.01498, 0, 0.21132, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[List]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.UIGradient
+G2L["7"] = Instance.new("UIGradient", G2L["6"]);
+G2L["7"]["Rotation"] = 69;
+G2L["7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["6"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD
+G2L["9"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["9"]["Active"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["CanvasSize"] = UDim2.new(0, 0, 20, 0);
+G2L["9"]["Name"] = [[AD]];
+G2L["9"]["ScrollBarImageTransparency"] = 1;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 503, 0, 155);
+G2L["9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d
+G2L["a"] = Instance.new("TextButton", G2L["9"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 389, 0, 43);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Max Speed]];
+G2L["a"]["Name"] = [[d]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UIGradient
+G2L["c"] = Instance.new("UIGradient", G2L["a"]);
+G2L["c"]["Rotation"] = 69;
+G2L["c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.UIListLayout
+G2L["f"] = Instance.new("UIListLayout", G2L["9"]);
+G2L["f"]["Wraps"] = true;
+G2L["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["f"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info
+G2L["10"] = Instance.new("ImageButton", G2L["9"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["10"]["Image"] = [[rbxassetid://5832745500]];
+G2L["10"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Name"] = [[Info]];
+G2L["10"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+G2L["11"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Description
+G2L["13"] = Instance.new("StringValue", G2L["10"]);
+G2L["13"]["Name"] = [[Description]];
+G2L["13"]["Value"] = [[Sets your walkspeed to the max bypass.]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Name
+G2L["14"] = Instance.new("StringValue", G2L["10"]);
+G2L["14"]["Name"] = [[Name]];
+G2L["14"]["Value"] = [[Max Speed]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UIGradient
+G2L["15"] = Instance.new("UIGradient", G2L["10"]);
+G2L["15"]["Rotation"] = 69;
+G2L["15"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["15"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["10"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.DValue
+G2L["17"] = Instance.new("StringValue", G2L["9"]);
+G2L["17"]["Name"] = [[DValue]];
+G2L["17"]["Value"] = [[EBUT]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates
+G2L["18"] = Instance.new("Folder", G2L["9"]);
+G2L["18"]["Name"] = [[Templates]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s
+G2L["19"] = Instance.new("TextButton", G2L["18"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 50, 0, 43);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[Info]];
+G2L["19"]["Name"] = [[s]];
+G2L["19"]["Visible"] = false;
+G2L["19"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.UIGradient
+G2L["1b"] = Instance.new("UIGradient", G2L["19"]);
+G2L["1b"]["Rotation"] = 69;
+G2L["1b"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["1b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["19"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.Name
+G2L["1d"] = Instance.new("StringValue", G2L["19"]);
+G2L["1d"]["Name"] = [[Name]];
+G2L["1d"]["Value"] = [[Walkspeed]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.Description
+G2L["1e"] = Instance.new("StringValue", G2L["19"]);
+G2L["1e"]["Name"] = [[Description]];
+G2L["1e"]["Value"] = [[Gamer]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d
+G2L["1f"] = Instance.new("TextButton", G2L["9"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 389, 0, 43);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[FullBright]];
+G2L["1f"]["Name"] = [[d]];
+G2L["1f"]["Position"] = UDim2.new(0, 0, 0.01387, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UIGradient
+G2L["21"] = Instance.new("UIGradient", G2L["1f"]);
+G2L["21"]["Rotation"] = 69;
+G2L["21"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["21"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["1f"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["1f"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info
+G2L["24"] = Instance.new("ImageButton", G2L["9"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["24"]["Image"] = [[rbxassetid://5832745500]];
+G2L["24"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[Info]];
+G2L["24"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+G2L["25"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["24"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Description
+G2L["27"] = Instance.new("StringValue", G2L["24"]);
+G2L["27"]["Name"] = [[Description]];
+G2L["27"]["Value"] = [[Makes it so that you can see normally and not so hard! You can't  revert this tho.]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Name
+G2L["28"] = Instance.new("StringValue", G2L["24"]);
+G2L["28"]["Name"] = [[Name]];
+G2L["28"]["Value"] = [[FullBright]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UIGradient
+G2L["29"] = Instance.new("UIGradient", G2L["24"]);
+G2L["29"]["Rotation"] = 69;
+G2L["29"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["29"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["24"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d
+G2L["2b"] = Instance.new("TextButton", G2L["9"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextScaled"] = true;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 389, 0, 43);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Show  Players and Homer]];
+G2L["2b"]["Name"] = [[d]];
+G2L["2b"]["Position"] = UDim2.new(0, 0, 0.01387, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UIGradient
+G2L["2d"] = Instance.new("UIGradient", G2L["2b"]);
+G2L["2d"]["Rotation"] = 69;
+G2L["2d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["2d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info
+G2L["30"] = Instance.new("ImageButton", G2L["9"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["30"]["Image"] = [[rbxassetid://5832745500]];
+G2L["30"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[Info]];
+G2L["30"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+G2L["31"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+G2L["32"] = Instance.new("LocalScript", G2L["30"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Description
+G2L["33"] = Instance.new("StringValue", G2L["30"]);
+G2L["33"]["Name"] = [[Description]];
+G2L["33"]["Value"] = [[Highlights Homer and Barts]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Name
+G2L["34"] = Instance.new("StringValue", G2L["30"]);
+G2L["34"]["Name"] = [[Name]];
+G2L["34"]["Value"] = [[ESP]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UIGradient
+G2L["35"] = Instance.new("UIGradient", G2L["30"]);
+G2L["35"]["Rotation"] = 69;
+G2L["35"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["35"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["30"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d
+G2L["37"] = Instance.new("TextButton", G2L["9"]);
+G2L["37"]["TextWrapped"] = true;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextSize"] = 14;
+G2L["37"]["TextScaled"] = true;
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["37"]["Size"] = UDim2.new(0, 389, 0, 43);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[AFK Grind]];
+G2L["37"]["Name"] = [[d]];
+G2L["37"]["Position"] = UDim2.new(0, 0, 0.01387, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UIGradient
+G2L["38"] = Instance.new("UIGradient", G2L["37"]);
+G2L["38"]["Rotation"] = 69;
+G2L["38"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["38"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.UICorner
+G2L["39"] = Instance.new("UICorner", G2L["37"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["37"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["37"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info
+G2L["3c"] = Instance.new("ImageButton", G2L["9"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["3c"]["Image"] = [[rbxassetid://5832745500]];
+G2L["3c"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[Info]];
+G2L["3c"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+G2L["3d"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+G2L["3e"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Description
+G2L["3f"] = Instance.new("StringValue", G2L["3c"]);
+G2L["3f"]["Name"] = [[Description]];
+G2L["3f"]["Value"] = [[Grind the Obby]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.Name
+G2L["40"] = Instance.new("StringValue", G2L["3c"]);
+G2L["40"]["Name"] = [[Name]];
+G2L["40"]["Value"] = [[AFK Grind]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UIGradient
+G2L["41"] = Instance.new("UIGradient", G2L["3c"]);
+G2L["41"]["Rotation"] = 69;
+G2L["41"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["41"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["3c"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB
+G2L["43"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["43"]["Visible"] = false;
+G2L["43"]["Active"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["CanvasSize"] = UDim2.new(0, 0, 20, 0);
+G2L["43"]["Name"] = [[AB]];
+G2L["43"]["ScrollBarImageTransparency"] = 1;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["Size"] = UDim2.new(0, 503, 0, 155);
+G2L["43"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.UIListLayout
+G2L["44"] = Instance.new("UIListLayout", G2L["43"]);
+G2L["44"]["Wraps"] = true;
+G2L["44"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["44"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing
+G2L["45"] = Instance.new("TextLabel", G2L["43"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["TextScaled"] = true;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(146, 146, 146);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["Size"] = UDim2.new(0, 489, 0, 83);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[Trees Troll GUI]];
+G2L["45"]["Name"] = [[Thing]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UIGradient
+G2L["47"] = Instance.new("UIGradient", G2L["45"]);
+G2L["47"]["Rotation"] = 69;
+G2L["47"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["47"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing
+G2L["48"] = Instance.new("TextLabel", G2L["43"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(146, 146, 146);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["Size"] = UDim2.new(0, 489, 0, 72);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[Advanced organized GUI setup]];
+G2L["48"]["Name"] = [[Thing]];
+G2L["48"]["Position"] = UDim2.new(0, 0, 0.02677, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UICorner
+G2L["49"] = Instance.new("UICorner", G2L["48"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UIGradient
+G2L["4a"] = Instance.new("UIGradient", G2L["48"]);
+G2L["4a"]["Rotation"] = 69;
+G2L["4a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["4a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing
+G2L["4b"] = Instance.new("TextLabel", G2L["43"]);
+G2L["4b"]["TextWrapped"] = true;
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["TextScaled"] = true;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(146, 146, 146);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["Size"] = UDim2.new(0, 489, 0, 41);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[Creator(s): NyOchIASIOWUK (yes this is a alt account stupid)]];
+G2L["4b"]["Name"] = [[Thing]];
+G2L["4b"]["Position"] = UDim2.new(0, 0, -0.00194, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UICorner
+G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UIGradient
+G2L["4d"] = Instance.new("UIGradient", G2L["4b"]);
+G2L["4d"]["Rotation"] = 69;
+G2L["4d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["4d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing
+G2L["4e"] = Instance.new("TextLabel", G2L["43"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(146, 146, 146);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["Size"] = UDim2.new(0, 489, 0, 41);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[Thanks to: Dex, Infinite Yield, Noxious hub, And you :)]];
+G2L["4e"]["Name"] = [[Thing]];
+G2L["4e"]["Position"] = UDim2.new(0, 0, -0.00194, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UICorner
+G2L["4f"] = Instance.new("UICorner", G2L["4e"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AB.Thing.UIGradient
+G2L["50"] = Instance.new("UIGradient", G2L["4e"]);
+G2L["50"]["Rotation"] = 69;
+G2L["50"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["50"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.DValue
+G2L["51"] = Instance.new("StringValue", G2L["6"]);
+G2L["51"]["Name"] = [[DValue]];
+G2L["51"]["Value"] = [[DarkenFrame]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS
+G2L["52"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["52"]["Visible"] = false;
+G2L["52"]["Active"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["CanvasSize"] = UDim2.new(0, 0, 20, 0);
+G2L["52"]["Name"] = [[AS]];
+G2L["52"]["ScrollBarImageTransparency"] = 1;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["Size"] = UDim2.new(0, 503, 0, 155);
+G2L["52"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.UIListLayout
+G2L["53"] = Instance.new("UIListLayout", G2L["52"]);
+G2L["53"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["53"]["Wraps"] = true;
+G2L["53"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["53"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.d
+G2L["54"] = Instance.new("TextButton", G2L["52"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextSize"] = 14;
+G2L["54"]["TextScaled"] = true;
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(114, 71, 71);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["54"]["Size"] = UDim2.new(0, 239, 0, 34);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[Lock]];
+G2L["54"]["Name"] = [[d]];
+G2L["54"]["Position"] = UDim2.new(0.2992, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.d.LocalScript
+G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.d.LocalScript
+G2L["56"] = Instance.new("LocalScript", G2L["54"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.d.UIGradient
+G2L["57"] = Instance.new("UIGradient", G2L["54"]);
+G2L["57"]["Rotation"] = 69;
+G2L["57"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["57"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.AS.d.UICorner
+G2L["58"] = Instance.new("UICorner", G2L["54"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF
+G2L["59"] = Instance.new("ScrollingFrame", G2L["6"]);
+G2L["59"]["Visible"] = false;
+G2L["59"]["Active"] = true;
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["CanvasSize"] = UDim2.new(0, 0, 20, 0);
+G2L["59"]["Name"] = [[ARF]];
+G2L["59"]["ScrollBarImageTransparency"] = 1;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["Size"] = UDim2.new(0, 503, 0, 155);
+G2L["59"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d
+G2L["5a"] = Instance.new("TextButton", G2L["59"]);
+G2L["5a"]["TextWrapped"] = true;
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["TextScaled"] = true;
+G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5a"]["Size"] = UDim2.new(0, 399, 0, 43);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Text"] = [[Unlock Night Vision, Camera anywhere,  player flashlight, and double stamina.]];
+G2L["5a"]["Name"] = [[d]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.LocalScript
+G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.UIGradient
+G2L["5c"] = Instance.new("UIGradient", G2L["5a"]);
+G2L["5c"]["Rotation"] = 69;
+G2L["5c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["5c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.UICorner
+G2L["5d"] = Instance.new("UICorner", G2L["5a"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.UIListLayout
+G2L["5e"] = Instance.new("UIListLayout", G2L["59"]);
+G2L["5e"]["Wraps"] = true;
+G2L["5e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["5e"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info
+G2L["5f"] = Instance.new("ImageButton", G2L["59"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["5f"]["Image"] = [[rbxassetid://5832745500]];
+G2L["5f"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Name"] = [[Info]];
+G2L["5f"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.a
+G2L["60"] = Instance.new("LocalScript", G2L["5f"]);
+G2L["60"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.LocalScript
+G2L["61"] = Instance.new("LocalScript", G2L["5f"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.Description
+G2L["62"] = Instance.new("StringValue", G2L["5f"]);
+G2L["62"]["Name"] = [[Description]];
+G2L["62"]["Value"] = [[Spacebar for night vision, Z for camera, and T for flashlight. I'm not on mobile so IDK]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.Name
+G2L["63"] = Instance.new("StringValue", G2L["5f"]);
+G2L["63"]["Name"] = [[Name]];
+G2L["63"]["Value"] = [[Unlock 4 gamepasses]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.UIGradient
+G2L["64"] = Instance.new("UIGradient", G2L["5f"]);
+G2L["64"]["Rotation"] = 69;
+G2L["64"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["64"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.UICorner
+G2L["65"] = Instance.new("UICorner", G2L["5f"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.DValue
+G2L["66"] = Instance.new("StringValue", G2L["59"]);
+G2L["66"]["Name"] = [[DValue]];
+G2L["66"]["Value"] = [[EBUT]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d
+G2L["67"] = Instance.new("TextButton", G2L["59"]);
+G2L["67"]["TextWrapped"] = true;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["TextSize"] = 14;
+G2L["67"]["TextScaled"] = true;
+G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["67"]["Size"] = UDim2.new(0, 216, 0, 43);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Text"] = [[Tweak out]];
+G2L["67"]["Name"] = [[d]];
+G2L["67"]["Position"] = UDim2.new(0, 0, 0.01387, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.LocalScript
+G2L["68"] = Instance.new("LocalScript", G2L["67"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.UIGradient
+G2L["69"] = Instance.new("UIGradient", G2L["67"]);
+G2L["69"]["Rotation"] = 69;
+G2L["69"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["69"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.UICorner
+G2L["6a"] = Instance.new("UICorner", G2L["67"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info
+G2L["6b"] = Instance.new("ImageButton", G2L["59"]);
+G2L["6b"]["BorderSizePixel"] = 0;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["6b"]["Image"] = [[rbxassetid://5832745500]];
+G2L["6b"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6b"]["Name"] = [[Info]];
+G2L["6b"]["Position"] = UDim2.new(0.57058, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.a
+G2L["6c"] = Instance.new("LocalScript", G2L["6b"]);
+G2L["6c"]["Name"] = [[a]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.Description
+G2L["6e"] = Instance.new("StringValue", G2L["6b"]);
+G2L["6e"]["Name"] = [[Description]];
+G2L["6e"]["Value"] = [[Now do the boogy dance]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.Name
+G2L["6f"] = Instance.new("StringValue", G2L["6b"]);
+G2L["6f"]["Name"] = [[Name]];
+G2L["6f"]["Value"] = [[Tweak Out]];
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.UIGradient
+G2L["70"] = Instance.new("UIGradient", G2L["6b"]);
+G2L["70"]["Rotation"] = 69;
+G2L["70"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["70"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.UICorner
+G2L["71"] = Instance.new("UICorner", G2L["6b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans
+G2L["72"] = Instance.new("Frame", G2L["2"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104);
+G2L["72"]["Size"] = UDim2.new(0, 503, 0, 43);
+G2L["72"]["Position"] = UDim2.new(0.01498, 0, 0.02264, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Name"] = [[Plans]];
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.UIGradient
+G2L["73"] = Instance.new("UIGradient", G2L["72"]);
+G2L["73"]["Rotation"] = 69;
+G2L["73"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["73"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.UICorner
+G2L["74"] = Instance.new("UICorner", G2L["72"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.UIListLayout
+G2L["75"] = Instance.new("UIListLayout", G2L["72"]);
+G2L["75"]["HorizontalFlex"] = Enum.UIFlexAlignment.SpaceEvenly;
+G2L["75"]["Wraps"] = true;
+G2L["75"]["VerticalFlex"] = Enum.UIFlexAlignment.SpaceEvenly;
+G2L["75"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["75"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.DValue
+G2L["76"] = Instance.new("StringValue", G2L["72"]);
+G2L["76"]["Name"] = [[DValue]];
+G2L["76"]["Value"] = [[DarkenFrame]];
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a
+G2L["77"] = Instance.new("TextButton", G2L["72"]);
+G2L["77"]["TextWrapped"] = true;
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["TextSize"] = 14;
+G2L["77"]["TextScaled"] = true;
+G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["77"]["Size"] = UDim2.new(0, 95, 0, 43);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Text"] = [[Player]];
+G2L["77"]["Name"] = [[a]];
+G2L["77"]["Position"] = UDim2.new(0.14314, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a.LocalScript
+G2L["78"] = Instance.new("LocalScript", G2L["77"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a.UPDATEME_UPDATE_ME_UPDATE
+G2L["79"] = Instance.new("LocalScript", G2L["77"]);
+G2L["79"]["Name"] = [[UPDATEME_UPDATE_ME_UPDATE]];
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a.UIGradient
+G2L["7a"] = Instance.new("UIGradient", G2L["77"]);
+G2L["7a"]["Rotation"] = 69;
+G2L["7a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["7a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a.UICorner
+G2L["7b"] = Instance.new("UICorner", G2L["77"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.a.DValue
+G2L["7c"] = Instance.new("StringValue", G2L["77"]);
+G2L["7c"]["Name"] = [[DValue]];
+G2L["7c"]["Value"] = [[BUT]];
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.e
+G2L["7d"] = Instance.new("TextButton", G2L["72"]);
+G2L["7d"]["TextWrapped"] = true;
+G2L["7d"]["BorderSizePixel"] = 0;
+G2L["7d"]["TextSize"] = 14;
+G2L["7d"]["TextScaled"] = true;
+G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(100, 107, 114);
+G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7d"]["Size"] = UDim2.new(0, 44, 0, 43);
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["Text"] = [[X]];
+G2L["7d"]["Name"] = [[e]];
+G2L["7d"]["Position"] = UDim2.new(0.01498, 0, 0.02264, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.e.LocalScript
+G2L["7e"] = Instance.new("LocalScript", G2L["7d"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.e.UIGradient
+G2L["7f"] = Instance.new("UIGradient", G2L["7d"]);
+G2L["7f"]["Rotation"] = 69;
+G2L["7f"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["7f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.e.UICorner
+G2L["80"] = Instance.new("UICorner", G2L["7d"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Plans.e.DValue
+G2L["81"] = Instance.new("StringValue", G2L["7d"]);
+G2L["81"]["Name"] = [[DValue]];
+G2L["81"]["Value"] = [[BUT]];
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo
+G2L["82"] = Instance.new("Frame", G2L["2"]);
+G2L["82"]["Visible"] = false;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["82"]["Size"] = UDim2.new(0, 301, 0, 374);
+G2L["82"]["Position"] = UDim2.new(0.99902, 0, -0.41407, 0);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Name"] = [[DescInfo]];
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.Old
+G2L["83"] = Instance.new("LocalScript", G2L["82"]);
+G2L["83"]["Enabled"] = false;
+G2L["83"]["Name"] = [[Old]];
+G2L["83"]["Disabled"] = true;
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.New
+G2L["84"] = Instance.new("LocalScript", G2L["82"]);
+G2L["84"]["Enabled"] = false;
+G2L["84"]["Name"] = [[New]];
+G2L["84"]["Disabled"] = true;
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.New
+G2L["85"] = Instance.new("LocalScript", G2L["82"]);
+G2L["85"]["Name"] = [[New]];
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.UICorner
+G2L["86"] = Instance.new("UICorner", G2L["82"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.UIGradient
+G2L["87"] = Instance.new("UIGradient", G2L["82"]);
+G2L["87"]["Rotation"] = 69;
+G2L["87"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["87"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.n
+G2L["88"] = Instance.new("TextLabel", G2L["82"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["Size"] = UDim2.new(0, 277, 0, 46);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[Hi]];
+G2L["88"]["Name"] = [[n]];
+G2L["88"]["Position"] = UDim2.new(0.03824, 0, 0.04091, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.n.UIGradient
+G2L["89"] = Instance.new("UIGradient", G2L["88"]);
+G2L["89"]["Rotation"] = 69;
+G2L["89"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["89"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.n.UICorner
+G2L["8a"] = Instance.new("UICorner", G2L["88"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.d
+G2L["8b"] = Instance.new("TextLabel", G2L["82"]);
+G2L["8b"]["TextWrapped"] = true;
+G2L["8b"]["BorderSizePixel"] = 0;
+G2L["8b"]["TextSize"] = 14;
+G2L["8b"]["TextScaled"] = true;
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["Size"] = UDim2.new(0, 277, 0, 297);
+G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8b"]["Text"] = [[Hi]];
+G2L["8b"]["Name"] = [[d]];
+G2L["8b"]["Position"] = UDim2.new(0.03824, 0, 0.18262, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.d.UIGradient
+G2L["8c"] = Instance.new("UIGradient", G2L["8b"]);
+G2L["8c"]["Rotation"] = 69;
+G2L["8c"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["8c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.DescInfo.d.UICorner
+G2L["8d"] = Instance.new("UICorner", G2L["8b"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel
+G2L["8e"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104);
+G2L["8e"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["8e"]["Size"] = UDim2.new(0, 39, 0, 37);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Position"] = UDim2.new(0.78119, 0, 0.82264, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel.LocalScript
+G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel.UICorner
+G2L["90"] = Instance.new("UICorner", G2L["8e"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel.UIStroke
+G2L["91"] = Instance.new("UIStroke", G2L["8e"]);
+G2L["91"]["Thickness"] = 4.8;
+G2L["91"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel.UIGradient
+G2L["92"] = Instance.new("UIGradient", G2L["8e"]);
+G2L["92"]["Rotation"] = 69;
+G2L["92"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["92"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel.DValue
+G2L["93"] = Instance.new("StringValue", G2L["8e"]);
+G2L["93"]["Name"] = [[DValue]];
+G2L["93"]["Value"] = [[IconX]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton
+G2L["94"] = Instance.new("ImageButton", G2L["2"]);
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104);
+G2L["94"]["Image"] = [[rbxassetid://7059346373]];
+G2L["94"]["Size"] = UDim2.new(0, 39, 0, 37);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["Position"] = UDim2.new(0.87908, 0, 0.82264, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.LocalScript
+G2L["95"] = Instance.new("LocalScript", G2L["94"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.a
+G2L["96"] = Instance.new("LocalScript", G2L["94"]);
+G2L["96"]["Enabled"] = false;
+G2L["96"]["Name"] = [[a]];
+G2L["96"]["Disabled"] = true;
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UPDATEME_UPDATE_ME_UPDATE
+G2L["97"] = Instance.new("LocalScript", G2L["94"]);
+G2L["97"]["Name"] = [[UPDATEME_UPDATE_ME_UPDATE]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UIStroke
+G2L["98"] = Instance.new("UIStroke", G2L["94"]);
+G2L["98"]["Thickness"] = 4.8;
+G2L["98"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UICorner
+G2L["99"] = Instance.new("UICorner", G2L["94"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UIGradient
+G2L["9a"] = Instance.new("UIGradient", G2L["94"]);
+G2L["9a"]["Rotation"] = 69;
+G2L["9a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["9a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.DValue
+G2L["9b"] = Instance.new("StringValue", G2L["94"]);
+G2L["9b"]["Name"] = [[DValue]];
+G2L["9b"]["Value"] = [[IconX]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.Name
+G2L["9c"] = Instance.new("StringValue", G2L["94"]);
+G2L["9c"]["Name"] = [[Name]];
+G2L["9c"]["Value"] = [[Settings]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.Description
+G2L["9d"] = Instance.new("StringValue", G2L["94"]);
+G2L["9d"]["Name"] = [[Description]];
+G2L["9d"]["Value"] = [[I think ill work on ts later]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton
+G2L["9e"] = Instance.new("ImageButton", G2L["2"]);
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104);
+G2L["9e"]["Image"] = [[rbxassetid://16485180075]];
+G2L["9e"]["Size"] = UDim2.new(0, 39, 0, 37);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["Position"] = UDim2.new(0.02848, 0, 0.82264, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UPDATEME_UPDATE_ME_UPDATE
+G2L["9f"] = Instance.new("LocalScript", G2L["9e"]);
+G2L["9f"]["Name"] = [[UPDATEME_UPDATE_ME_UPDATE]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UIStroke
+G2L["a0"] = Instance.new("UIStroke", G2L["9e"]);
+G2L["a0"]["Thickness"] = 4.8;
+G2L["a0"]["Color"] = Color3.fromRGB(68, 68, 68);
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UICorner
+G2L["a1"] = Instance.new("UICorner", G2L["9e"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.UIGradient
+G2L["a2"] = Instance.new("UIGradient", G2L["9e"]);
+G2L["a2"]["Rotation"] = 69;
+G2L["a2"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["a2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.ImageButton.DValue
+G2L["a3"] = Instance.new("StringValue", G2L["9e"]);
+G2L["a3"]["Name"] = [[DValue]];
+G2L["a3"]["Value"] = [[IconX]];
+
+
+-- StarterGui.ScreenGui.MainUi.DValue
+G2L["a4"] = Instance.new("StringValue", G2L["2"]);
+G2L["a4"]["Name"] = [[DValue]];
+G2L["a4"]["Value"] = [[Main]];
+
+
+-- StarterGui.ScreenGui.MainUi.Thing
+G2L["a5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["a5"]["TextWrapped"] = true;
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["TextSize"] = 14;
+G2L["a5"]["TextScaled"] = true;
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(146, 146, 146);
+G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["Size"] = UDim2.new(0, 322, 0, 35);
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["Text"] = [[Hi]];
+G2L["a5"]["Name"] = [[Thing]];
+G2L["a5"]["Position"] = UDim2.new(0.1359, 0, 0.83015, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.Thing.LocalScript
+G2L["a6"] = Instance.new("LocalScript", G2L["a5"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Thing.UIGradient
+G2L["a7"] = Instance.new("UIGradient", G2L["a5"]);
+G2L["a7"]["Rotation"] = 69;
+G2L["a7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0.2),NumberSequenceKeypoint.new(0.207, 0.3625),NumberSequenceKeypoint.new(0.509, 0.15),NumberSequenceKeypoint.new(0.712, 0.325),NumberSequenceKeypoint.new(1.000, 0.2)};
+G2L["a7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+
+-- StarterGui.ScreenGui.MainUi.Thing.UICorner
+G2L["a8"] = Instance.new("UICorner", G2L["a5"]);
+
+
+
+-- StarterGui.ScreenGui.MainUi.Thing.DValue
+G2L["a9"] = Instance.new("StringValue", G2L["a5"]);
+G2L["a9"]["Name"] = [[DValue]];
+G2L["a9"]["Value"] = [[LightenIntro]];
+
+
+-- StarterGui.ScreenGui.MainUi.ImageLabel
+G2L["aa"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["aa"]["BorderSizePixel"] = 0;
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["ImageTransparency"] = 0.94;
+G2L["aa"]["Image"] = [[rbxassetid://99099293268582]];
+G2L["aa"]["Size"] = UDim2.new(0, 76, 0, 76);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["BackgroundTransparency"] = 1;
+G2L["aa"]["Position"] = UDim2.new(-0.00768, 0, 0.53585, 0);
+
+
+-- StarterGui.ScreenGui.MainUi.Drag
+local function C_3()
+local script = G2L["3"];
 	local UserInputService = game:GetService("UserInputService")
 	local runService = (game:GetService("RunService"));
 	
@@ -631,11 +1330,11 @@ local function VTUY_fake_script() -- MainUi.Drag
 	
 	runService.Heartbeat:Connect(Update)
 	
-end
-coroutine.wrap(VTUY_fake_script)()
-local function FKWVHL_fake_script() -- d.LocalScript 
-	local script = Instance.new('LocalScript', d)
-
+end;
+task.spawn(C_3);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_b()
+local script = G2L["b"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -663,21 +1362,21 @@ local function FKWVHL_fake_script() -- d.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(FKWVHL_fake_script)()
-local function IXEEBH_fake_script() -- d.LocalScript 
-	local script = Instance.new('LocalScript', d)
-
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_e()
+local script = G2L["e"];
 	script.Parent.MouseButton1Up:Connect(function()
 		local plr = game:GetService("Players").LocalPlayer.Character.Humanoid
 		
 		plr.WalkSpeed = 48
 	end)
-end
-coroutine.wrap(IXEEBH_fake_script)()
-local function BNNKN_fake_script() -- Info.a 
-	local script = Instance.new('LocalScript', Info)
-
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+local function C_11()
+local script = G2L["11"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -695,11 +1394,11 @@ local function BNNKN_fake_script() -- Info.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(BNNKN_fake_script)()
-local function NRNUIES_fake_script() -- Info.LocalScript 
-	local script = Instance.new('LocalScript', Info)
-
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+local function C_12()
+local script = G2L["12"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -727,11 +1426,11 @@ local function NRNUIES_fake_script() -- Info.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(NRNUIES_fake_script)()
-local function KQPPCL_fake_script() -- s.LocalScript 
-	local script = Instance.new('LocalScript', s)
-
+end;
+task.spawn(C_12);
+-- StarterGui.ScreenGui.MainUi.List.AD.Templates.s.LocalScript
+local function C_1a()
+local script = G2L["1a"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -749,11 +1448,11 @@ local function KQPPCL_fake_script() -- s.LocalScript
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(KQPPCL_fake_script)()
-local function EYOQ_fake_script() -- d_2.LocalScript 
-	local script = Instance.new('LocalScript', d_2)
-
+end;
+task.spawn(C_1a);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_20()
+local script = G2L["20"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -781,11 +1480,11 @@ local function EYOQ_fake_script() -- d_2.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(EYOQ_fake_script)()
-local function WQJPOH_fake_script() -- d_2.LocalScript 
-	local script = Instance.new('LocalScript', d_2)
-
+end;
+task.spawn(C_20);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_23()
+local script = G2L["23"];
 	local Lighting = game:GetService("Lighting")
 	local button = script.Parent
 	
@@ -802,11 +1501,11 @@ local function WQJPOH_fake_script() -- d_2.LocalScript
 		Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 	end)
 	
-end
-coroutine.wrap(WQJPOH_fake_script)()
-local function FEOJLEB_fake_script() -- Info_2.a 
-	local script = Instance.new('LocalScript', Info_2)
-
+end;
+task.spawn(C_23);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+local function C_25()
+local script = G2L["25"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -824,11 +1523,11 @@ local function FEOJLEB_fake_script() -- Info_2.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(FEOJLEB_fake_script)()
-local function GKAFLE_fake_script() -- Info_2.LocalScript 
-	local script = Instance.new('LocalScript', Info_2)
-
+end;
+task.spawn(C_25);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+local function C_26()
+local script = G2L["26"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -856,11 +1555,11 @@ local function GKAFLE_fake_script() -- Info_2.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(GKAFLE_fake_script)()
-local function KQRMFII_fake_script() -- d_3.LocalScript 
-	local script = Instance.new('LocalScript', d_3)
-
+end;
+task.spawn(C_26);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_2c()
+local script = G2L["2c"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -888,11 +1587,11 @@ local function KQRMFII_fake_script() -- d_3.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(KQRMFII_fake_script)()
-local function UXYR_fake_script() -- d_3.LocalScript 
-	local script = Instance.new('LocalScript', d_3)
-
+end;
+task.spawn(C_2c);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_2f()
+local script = G2L["2f"];
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
 	
@@ -952,11 +1651,11 @@ local function UXYR_fake_script() -- d_3.LocalScript
 		end)
 	end)
 	
-end
-coroutine.wrap(UXYR_fake_script)()
-local function TINMQ_fake_script() -- Info_3.a 
-	local script = Instance.new('LocalScript', Info_3)
-
+end;
+task.spawn(C_2f);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+local function C_31()
+local script = G2L["31"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -974,11 +1673,11 @@ local function TINMQ_fake_script() -- Info_3.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(TINMQ_fake_script)()
-local function ITUUXD_fake_script() -- Info_3.LocalScript 
-	local script = Instance.new('LocalScript', Info_3)
-
+end;
+task.spawn(C_31);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+local function C_32()
+local script = G2L["32"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1006,11 +1705,11 @@ local function ITUUXD_fake_script() -- Info_3.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(ITUUXD_fake_script)()
-local function VHHACMU_fake_script() -- d_4.LocalScript 
-	local script = Instance.new('LocalScript', d_4)
-
+end;
+task.spawn(C_32);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_3a()
+local script = G2L["3a"];
 	local Players = game:GetService("Players")
 	local player = Players.LocalPlayer
 	
@@ -1068,11 +1767,11 @@ local function VHHACMU_fake_script() -- d_4.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(VHHACMU_fake_script)()
-local function XIUQJ_fake_script() -- d_4.LocalScript 
-	local script = Instance.new('LocalScript', d_4)
-
+end;
+task.spawn(C_3a);
+-- StarterGui.ScreenGui.MainUi.List.AD.d.LocalScript
+local function C_3b()
+local script = G2L["3b"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1100,11 +1799,11 @@ local function XIUQJ_fake_script() -- d_4.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(XIUQJ_fake_script)()
-local function HUGLYWX_fake_script() -- Info_4.a 
-	local script = Instance.new('LocalScript', Info_4)
-
+end;
+task.spawn(C_3b);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.a
+local function C_3d()
+local script = G2L["3d"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -1122,11 +1821,11 @@ local function HUGLYWX_fake_script() -- Info_4.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(HUGLYWX_fake_script)()
-local function EIZW_fake_script() -- Info_4.LocalScript 
-	local script = Instance.new('LocalScript', Info_4)
-
+end;
+task.spawn(C_3d);
+-- StarterGui.ScreenGui.MainUi.List.AD.Info.LocalScript
+local function C_3e()
+local script = G2L["3e"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1154,11 +1853,11 @@ local function EIZW_fake_script() -- Info_4.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(EIZW_fake_script)()
-local function GSZF_fake_script() -- d_5.LocalScript 
-	local script = Instance.new('LocalScript', d_5)
-
+end;
+task.spawn(C_3e);
+-- StarterGui.ScreenGui.MainUi.List.AS.d.LocalScript
+local function C_55()
+local script = G2L["55"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1186,11 +1885,11 @@ local function GSZF_fake_script() -- d_5.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(GSZF_fake_script)()
-local function QHASA_fake_script() -- d_5.LocalScript 
-	local script = Instance.new('LocalScript', d_5)
-
+end;
+task.spawn(C_55);
+-- StarterGui.ScreenGui.MainUi.List.AS.d.LocalScript
+local function C_56()
+local script = G2L["56"];
 	local button = script.Parent
 	
 	-- Path to Drag
@@ -1219,11 +1918,11 @@ local function QHASA_fake_script() -- d_5.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(QHASA_fake_script)()
-local function ZKFIZHM_fake_script() -- d_6.LocalScript 
-	local script = Instance.new('LocalScript', d_6)
-
+end;
+task.spawn(C_56);
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.LocalScript
+local function C_5b()
+local script = G2L["5b"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1251,11 +1950,11 @@ local function ZKFIZHM_fake_script() -- d_6.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(ZKFIZHM_fake_script)()
-local function MRXNUC_fake_script() -- Info_5.a 
-	local script = Instance.new('LocalScript', Info_5)
-
+end;
+task.spawn(C_5b);
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.a
+local function C_60()
+local script = G2L["60"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -1273,11 +1972,11 @@ local function MRXNUC_fake_script() -- Info_5.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(MRXNUC_fake_script)()
-local function ZJAD_fake_script() -- Info_5.LocalScript 
-	local script = Instance.new('LocalScript', Info_5)
-
+end;
+task.spawn(C_60);
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.LocalScript
+local function C_61()
+local script = G2L["61"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1305,11 +2004,11 @@ local function ZJAD_fake_script() -- Info_5.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(ZJAD_fake_script)()
-local function IDOSF_fake_script() -- d_7.LocalScript 
-	local script = Instance.new('LocalScript', d_7)
-
+end;
+task.spawn(C_61);
+-- StarterGui.ScreenGui.MainUi.List.ARF.d.LocalScript
+local function C_68()
+local script = G2L["68"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1337,11 +2036,11 @@ local function IDOSF_fake_script() -- d_7.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(IDOSF_fake_script)()
-local function EXVUM_fake_script() -- Info_6.a 
-	local script = Instance.new('LocalScript', Info_6)
-
+end;
+task.spawn(C_68);
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.a
+local function C_6c()
+local script = G2L["6c"];
 	local button = script.Parent
 	
 	local nameValue = button:WaitForChild("Name")
@@ -1359,11 +2058,11 @@ local function EXVUM_fake_script() -- Info_6.a
 		descLabel.Text = descriptionValue.Value
 	end)
 	
-end
-coroutine.wrap(EXVUM_fake_script)()
-local function QTBPL_fake_script() -- Info_6.LocalScript 
-	local script = Instance.new('LocalScript', Info_6)
-
+end;
+task.spawn(C_6c);
+-- StarterGui.ScreenGui.MainUi.List.ARF.Info.LocalScript
+local function C_6d()
+local script = G2L["6d"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1391,11 +2090,11 @@ local function QTBPL_fake_script() -- Info_6.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(QTBPL_fake_script)()
-local function GPCDVT_fake_script() -- a.LocalScript 
-	local script = Instance.new('LocalScript', a)
-
+end;
+task.spawn(C_6d);
+-- StarterGui.ScreenGui.MainUi.Plans.a.LocalScript
+local function C_78()
+local script = G2L["78"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1423,11 +2122,11 @@ local function GPCDVT_fake_script() -- a.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(GPCDVT_fake_script)()
-local function EIKU_fake_script() -- a.UPDATEME_UPDATE_ME_UPDATE 
-	local script = Instance.new('LocalScript', a)
-
+end;
+task.spawn(C_78);
+-- StarterGui.ScreenGui.MainUi.Plans.a.UPDATEME_UPDATE_ME_UPDATE
+local function C_79()
+local script = G2L["79"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1461,11 +2160,11 @@ local function EIKU_fake_script() -- a.UPDATEME_UPDATE_ME_UPDATE
 		script.Parent.Parent.Parent.List.AS.Visible = false
 		script.Parent.Parent.Parent.List.ARF.Visible = false
 	end)
-end
-coroutine.wrap(EIKU_fake_script)()
-local function WIPHSIR_fake_script() -- e.LocalScript 
-	local script = Instance.new('LocalScript', e)
-
+end;
+task.spawn(C_79);
+-- StarterGui.ScreenGui.MainUi.Plans.e.LocalScript
+local function C_7e()
+local script = G2L["7e"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1493,13 +2192,11 @@ local function WIPHSIR_fake_script() -- e.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(WIPHSIR_fake_script)()
--- DescInfo.Old is disabled.
--- DescInfo.New is disabled.
-local function PHIM_fake_script() -- DescInfo.New 
-	local script = Instance.new('LocalScript', DescInfo)
-
+end;
+task.spawn(C_7e);
+-- StarterGui.ScreenGui.MainUi.DescInfo.New
+local function C_85()
+local script = G2L["85"];
 	local frame = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1548,11 +2245,11 @@ local function PHIM_fake_script() -- DescInfo.New
 		end
 	end)
 	
-end
-coroutine.wrap(PHIM_fake_script)()
-local function CWGHYC_fake_script() -- ImageLabel.LocalScript 
-	local script = Instance.new('LocalScript', ImageLabel)
-
+end;
+task.spawn(C_85);
+-- StarterGui.ScreenGui.MainUi.ImageLabel.LocalScript
+local function C_8f()
+local script = G2L["8f"];
 	local Players = game:GetService("Players")
 	local player = Players.LocalPlayer
 	
@@ -1567,11 +2264,11 @@ local function CWGHYC_fake_script() -- ImageLabel.LocalScript
 	
 	imageLabel.Image = content
 	
-end
-coroutine.wrap(CWGHYC_fake_script)()
-local function SQJQMOS_fake_script() -- ImageButton.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton)
-
+end;
+task.spawn(C_8f);
+-- StarterGui.ScreenGui.MainUi.ImageButton.LocalScript
+local function C_95()
+local script = G2L["95"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1599,12 +2296,11 @@ local function SQJQMOS_fake_script() -- ImageButton.LocalScript
 		normalTween:Play()
 	end)
 	
-end
-coroutine.wrap(SQJQMOS_fake_script)()
--- ImageButton.a is disabled.
-local function FEZMP_fake_script() -- ImageButton.UPDATEME_UPDATE_ME_UPDATE 
-	local script = Instance.new('LocalScript', ImageButton)
-
+end;
+task.spawn(C_95);
+-- StarterGui.ScreenGui.MainUi.ImageButton.UPDATEME_UPDATE_ME_UPDATE
+local function C_97()
+local script = G2L["97"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1638,11 +2334,11 @@ local function FEZMP_fake_script() -- ImageButton.UPDATEME_UPDATE_ME_UPDATE
 		script.Parent.Parent.List.AS.Visible = true
 		script.Parent.Parent.List.ARF.Visible = false
 	end)
-end
-coroutine.wrap(FEZMP_fake_script)()
-local function KALIS_fake_script() -- ImageButton_2.UPDATEME_UPDATE_ME_UPDATE 
-	local script = Instance.new('LocalScript', ImageButton_2)
-
+end;
+task.spawn(C_97);
+-- StarterGui.ScreenGui.MainUi.ImageButton.UPDATEME_UPDATE_ME_UPDATE
+local function C_9f()
+local script = G2L["9f"];
 	local button = script.Parent
 	local TweenService = game:GetService("TweenService")
 	
@@ -1676,11 +2372,11 @@ local function KALIS_fake_script() -- ImageButton_2.UPDATEME_UPDATE_ME_UPDATE
 		script.Parent.Parent.List.AS.Visible = false
 		script.Parent.Parent.List.ARF.Visible = false
 	end)
-end
-coroutine.wrap(KALIS_fake_script)()
-local function CWUM_fake_script() -- Thing_5.LocalScript 
-	local script = Instance.new('LocalScript', Thing_5)
-
+end;
+task.spawn(C_9f);
+-- StarterGui.ScreenGui.MainUi.Thing.LocalScript
+local function C_a6()
+local script = G2L["a6"];
 	local Players = game:GetService("Players")
 	local player = Players.LocalPlayer
 	
@@ -1696,5 +2392,7 @@ local function CWUM_fake_script() -- Thing_5.LocalScript
 		label.Text = string.sub(message, 1, i)
 		task.wait(typingSpeed)
 	end
-end
-coroutine.wrap(CWUM_fake_script)()
+end;
+task.spawn(C_a6);
+
+return G2L["1"], require;
