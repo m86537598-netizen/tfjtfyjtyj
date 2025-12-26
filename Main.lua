@@ -1660,7 +1660,7 @@ local script = G2L["32"];
 				while isOn do
 					local hrp = getHRP()
 					hrp.CFrame = winPad.CFrame + Vector3.new(0, 3, 0)
-					task.wait(0.2) -- loop delay (adjust if needed)
+					task.wait(1) -- loop delay (adjust if needed)
 				end
 			end)
 	
