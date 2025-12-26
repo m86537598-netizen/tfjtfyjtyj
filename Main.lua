@@ -1659,8 +1659,8 @@ local script = G2L["32"];
 			teleportLoop = task.spawn(function()
 				while isOn do
 					local hrp = getHRP()
-					hrp.CFrame = winPad.CFrame + Vector3.new(0, 3, 0)
-					task.wait(1) -- loop delay (adjust if needed)
+					hrp.CFrame = winPad.CFrame + Vector3.new(0, 23, 0)
+					task.wait(4) -- loop delay (adjust if needed)
 				end
 			end)
 	
